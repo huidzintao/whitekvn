@@ -14,7 +14,7 @@ import requests
 MAX_FINAL_KEYS = 50
 MAX_LATENCY_MS = 1500
 THREADS = 30
-UPDATE_INTERVAL_SECONDS = 14400
+UPDATE_INTERVAL_SECONDS = 3600
 
 VALID_PROTOCOLS = (
     "vless://", "trojan://", "hysteria2://", "hy2://",
