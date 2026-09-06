@@ -11,7 +11,6 @@ from fastapi import FastAPI, Response
 from fastapi.responses import HTMLResponse
 import requests
 
-# Параметры
 MAX_FINAL_KEYS = 50
 MAX_LATENCY_MS = 1500
 THREADS = 30
@@ -165,8 +164,3 @@ def get_sub_raw():
 @app.get("/health")
 def health():
     return {"status": "ok", "total_alive": TOTAL_ALIVE, "last_updated": LAST_UPDATED}
-
-if __name__ == "__main__":
-    import uvicorn
-    port = int(os.getenv("PORT", "8000"))
-    uvicorn.run(app, host="0.0.0.0", port=port)
